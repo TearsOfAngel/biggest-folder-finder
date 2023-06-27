@@ -18,7 +18,7 @@ public class Node {
         this.folder = folder;
         children = new ArrayList<>();
     }
-    //Some bullshit here. Grabbed from online workshop.
+
     private void setSizeLimit(long sizeLimit) {
         this.sizeLimit = sizeLimit;
     }
