@@ -4,11 +4,11 @@ import java.util.concurrent.ForkJoinPool;
 public class Main {
 
     public static void main(String[] args) {
-
         ParametersBag bag = new ParametersBag(args);
 
         String folderPath = bag.getPath();
         long sizeLimit = bag.getLimit();
+
         File file = new File(folderPath);
         Node root = new Node(file, sizeLimit);
 
@@ -21,8 +21,6 @@ public class Main {
 
         long duration = System.currentTimeMillis() - start;
 
-
         System.out.println(duration + " ms");
-
     }
 }
